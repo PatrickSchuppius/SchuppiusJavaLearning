@@ -21,6 +21,8 @@ public class SecondsAndMinutesChallenge {
 
 	}
 
+	public static final String INVALID_VALUE_MESSAGE = "Invalid Value";
+
 	public static String stringTest(String a) {
 		if (a == "guckguck") {
 			return a;
@@ -32,7 +34,7 @@ public class SecondsAndMinutesChallenge {
 	public static String getDurationString(int minutes, int seconds) {
 
 		if (minutes < 0 || seconds < 0 || seconds > 59) {
-			return "Invalid value";
+			return INVALID_VALUE_MESSAGE;
 		}
 
 		return (minutes / 60) + "h " + minutes % 60 + "m " + seconds + "s";
@@ -41,7 +43,7 @@ public class SecondsAndMinutesChallenge {
 	public static String getDurationString(int seconds) {
 
 		if (seconds < 0) {
-			return "Invalid value";
+			return INVALID_VALUE_MESSAGE;
 		}
 
 		return getDurationString(seconds / 60, seconds % 60);
