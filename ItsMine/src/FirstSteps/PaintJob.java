@@ -21,6 +21,7 @@ public class PaintJob {
 		} else {
 			System.out.println("Test Failure. Result was: " + getBucketCount(2.75, 3.25, 2.5, 1));
 		}
+		System.out.println("ja");
 	}
 
 	public static int getBucketCount(double width, double height, double areaPerBucket, int extraBuckets) {
