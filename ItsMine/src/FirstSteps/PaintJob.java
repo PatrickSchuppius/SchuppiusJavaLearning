@@ -5,7 +5,7 @@ public class PaintJob {
 
 	public static void main(String[] args) {
 		if (getBucketCount(-3.4, 2.1, 1.5, 2) == -1) {
-			System.out.println("Test Successful");
+			System.out.println("Test Successful, horaaayy!");
 		} else {
 			System.out.println("Test Failure. Result was: " + getBucketCount(-3.4, 2.1, 1.5, 2));
 		}
