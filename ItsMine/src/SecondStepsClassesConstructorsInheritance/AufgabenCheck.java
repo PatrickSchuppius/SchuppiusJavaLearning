@@ -26,10 +26,14 @@ public class AufgabenCheck {
 		// Point point = new Point();
 		// System.out.println("distance()= " + point.distance());
 		
+		// Subaru mySubaru = new Subaru(4);
+		// mySubaru.steerVehicle("links");
+		// mySubaru.steerVehicle("rechts");
+		// mySubaru.steerVehicle("xxx");
+
 		Subaru mySubaru = new Subaru(4);
-		mySubaru.steerVehicle("links");
-		mySubaru.steerVehicle("rechts");
-		mySubaru.steerVehicle("xxx");
+		mySubaru.changeGear("red", "elektro");
+		System.out.println(mySubaru.getColor() + " " + mySubaru.getMotorType());
 		
 	}
 
