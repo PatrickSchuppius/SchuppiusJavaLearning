@@ -7,7 +7,6 @@ public class Floor {
 	private double length;
 
 	public Floor(double width, double length) {
-		super();
 		this.width = width;
 		if (width < 0) {
 			this.width = 0;

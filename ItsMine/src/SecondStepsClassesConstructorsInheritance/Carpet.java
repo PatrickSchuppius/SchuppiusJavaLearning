@@ -10,7 +10,6 @@ public class Carpet {
 	}
 
 	public Carpet(double cost) {
-		super();
 		this.cost = cost;
 		if (cost < 0) {
 			this.cost = 0;

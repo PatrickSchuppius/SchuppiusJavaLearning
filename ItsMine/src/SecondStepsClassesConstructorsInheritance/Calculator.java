@@ -7,7 +7,6 @@ public class Calculator {
 	private Carpet carpet;
 
 	public Calculator(Floor floor, Carpet carpet) {
-		super();
 		this.floor = floor;
 		this.carpet = carpet;
 	}
