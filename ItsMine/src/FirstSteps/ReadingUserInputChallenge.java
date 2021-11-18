@@ -20,7 +20,7 @@ public class ReadingUserInputChallenge {
 				// scanner.nextLine(); // handle next line character (enter key)
 
 				System.out.println("Enter your name: ");
-				String name = scanner.nextLine();
+				String name = scanner.next();
 
 				int age = 2021 - yearOfBirth;
 

@@ -6,8 +6,14 @@ public class BurgerAddition {
 	private double price;
 
 	public BurgerAddition(double price) {
-		super();
+		// super();
 		this.price = price;
 	}
+
+	public double getPrice() {
+		return price;
+	}
+
+
 
 }
