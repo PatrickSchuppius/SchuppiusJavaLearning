@@ -1,5 +1,7 @@
 package justSomeExercises;
 
+import java.util.Arrays;
+
 public class ArrayExercises {
 
 	private static int[] vector;
@@ -41,6 +43,7 @@ public class ArrayExercises {
 			vector[j] = j * factor;
 			System.out.println("vector [" + j + "] = " + vector[j]);
 		}
+		System.out.println("Vector contents is: " + Arrays.toString(vector));
 	}
 
 }
