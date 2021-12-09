@@ -37,6 +37,30 @@ public class MobilePhone {
 
 	}
 
+	public void removeContact(Contact contactToRemove) {
+
+		if (!this.doesContactAlreadyExist(contactToRemove)) {
+			System.out.println("Your phone has no contact with the name" + contactToRemove.getName());
+			return;
+		}
+
+		for (Contact contact : contacts) {
+			if (contact.equals(contactToRemove)) {
+				contacts.remove(contact);
+			}
+		}
+
+	}
+
+	public String searchContact(String name) {
+		for (Contact contact : contacts) {
+			if (contact.getName().equalsIgnoreCase(name)) {
+				return contact.toString();
+			}
+		}
+		return "Name not found";
+	}
+
 	private boolean doesContactAlreadyExist(Contact contact) {
 		for (Contact otherContact : contacts) {
 			if (otherContact.equals(contact)) {
