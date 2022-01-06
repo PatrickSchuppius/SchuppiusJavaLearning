@@ -18,7 +18,8 @@ public class BankingTest {
 		bank.addCustomerTransaction("Adelaide", "Mike", 1.65);
 
 		// bank.listCustomers("Adelaide", true);
-		bank.listCustomers("Adelaide", false);
+		// bank.listCustomers("Adelaide", true);
+		bank.listCustomers("Melbourne", true);
 	}
 
 }
