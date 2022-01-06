@@ -1,4 +1,4 @@
-package arrays;
+package collections;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -24,7 +24,7 @@ public class Album {
 		return true;
 	}
 
-	public Song findSong(String titleOfSong) {
+	private Song findSong(String titleOfSong) {
 		for (Song actualSong : songs) {
 			if (actualSong.getTitle().equalsIgnoreCase(titleOfSong)) {
 				return actualSong;
@@ -35,7 +35,8 @@ public class Album {
 
 	public boolean addToPlayList(int trackNumberOfSongInAlbum, LinkedList<Song> playList) {
 
-		if (songs.size() < trackNumberOfSongInAlbum) {
+		if (songs.size() < trackNumberOfSongInAlbum || trackNumberOfSongInAlbum <= 0) {
+			System.out.println("Index of song out of range!");
 			return false;
 		}
 

@@ -1,4 +1,4 @@
-package arrays;
+package collections;
 
 public class ArrayCopy {
 
