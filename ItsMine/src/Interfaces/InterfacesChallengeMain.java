@@ -15,13 +15,14 @@ public class InterfacesChallengeMain {
 		System.out.println(tim);
 		tim.setWeapon("Stormbringer");
 		saveObject(tim);
-		loadObject(tim);
+		// loadObject(tim);
 		System.out.println(tim);
-	}
 
-	private void xymethod(Player player) {
-
-		player.write();
+		Monster bigDragon = new Monster("Smaug", 3700, 125);
+		System.out.println(bigDragon);
+		saveObject(bigDragon);
+		loadObject(bigDragon);
+		System.out.println(bigDragon);
 	}
 
 	public static void saveObject(ISaveable objectToSave) {
