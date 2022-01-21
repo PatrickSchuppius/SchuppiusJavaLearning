@@ -1,4 +1,4 @@
-package BankingChallenge;
+package bankingChallenge;
 
 
 public class BankingTest {
@@ -18,8 +18,8 @@ public class BankingTest {
 		bank.addCustomerTransaction("Adelaide", "Mike", 1.65);
 
 		// bank.listCustomers("Adelaide", true);
-		// bank.listCustomers("Adelaide", true);
-		bank.listCustomers("Melbourne", true);
+		bank.listCustomers("Adelaide", true);
+//		bank.listCustomers("Melbourne", true);
 	}
 
 }
