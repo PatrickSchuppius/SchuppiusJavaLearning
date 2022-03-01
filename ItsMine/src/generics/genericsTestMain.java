@@ -1,6 +1,5 @@
 package generics;
 
-
 public class genericsTestMain {
 
 	public static void main(String[] args) {
@@ -38,6 +37,27 @@ public class genericsTestMain {
 		// adelaideCrows.matchResult(baseballTeam, 1, 1);
 		// dieser Fehler kann nicht mehr passieren mit
 		// public void matchResult(Team<T> opponent, ... in der Klasse Teams
+
+		System.out.println("Rankings");
+		System.out.println(adelaideCrows.getName() + ": " + adelaideCrows.ranking());
+		System.out.println(melbourne.getName() + ": " + melbourne.ranking());
+		System.out.println(fremantle.getName() + ": " + fremantle.ranking());
+		System.out.println(hawthorn.getName() + ": " + hawthorn.ranking());
+
+		System.out.println(adelaideCrows.compareTo(melbourne));
+		System.out.println(adelaideCrows.compareTo(hawthorn));
+		System.out.println(hawthorn.compareTo(adelaideCrows));
+		System.out.println(melbourne.compareTo(fremantle));
+
+		// ArrayList<Team> myteams;
+//		Collections.sort(myteams);
+
+		League<Team<FootballPlayer>> league = new League<>("Superfußball-Liga");
+		league.add(fremantle);
+		league.add(adelaideCrows);
+		league.add(hawthorn);
+		league.add(melbourne);
+		league.printLeagueTable();
 
 	}
 

@@ -3,7 +3,7 @@ package generics;
 import java.util.ArrayList;
 
 // public class Team<T> { // first version
-public class Team<T extends Player> { // T is a "bounded type parameter"
+public class Team<T extends Player> implements Comparable<Team<T>> { // T is a "bounded type parameter"
 	
 //	sowas würde auch gehen: public class Team<T extends Player & Coach & Manager>  
 // dann muss Player eine Klasse sein und der Rest Interfaces
@@ -64,6 +64,18 @@ public class Team<T extends Player> { // T is a "bounded type parameter"
 
 	public int ranking() {
 		return (won * 2) + tied;
+	}
+
+	@Override
+	public int compareTo(Team<T> team) {
+		if (this.ranking() > team.ranking()) {
+			return -1;
+		} else if (this.ranking() < team.ranking()) {
+			return 1;
+		} else {
+			return 0;
+		}
+
 	}
 
 }
